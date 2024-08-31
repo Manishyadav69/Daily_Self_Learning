@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .user-info {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="user-info">
+        <h2>User Information</h2>
+        <p><strong>Email:</strong> <span id="userEmail"></span></p>
+        <p><strong>Medium:</strong> <span id="userMedium"></span></p>
+        <p><strong>Github:</strong> <span id="userGithub"></span></p>
+        <p><strong>LinkedIn:</strong> <span id="userLinkedin"></span></p>
+        <p><strong>First Name:</strong> <span id="userFirstName"></span></p>
+        <p><strong>Last Name:</strong> <span id="userLastName"></span></p>
+        <p><strong>Mobile No.:</strong> <span id="userMobile"></span></p>
+    </div>
+
+    <script>
+        // Fetch data from local storage and display it
+        document.getElementById('userEmail').textContent = localStorage.getItem('email');
+        document.getElementById('userMedium').textContent = localStorage.getItem('medium');
+        document.getElementById('userGithub').textContent = localStorage.getItem('github');
+        document.getElementById('userLinkedin').textContent = localStorage.getItem('linkedin');
+        document.getElementById('userFirstName').textContent = localStorage.getItem('firstName');
+        document.getElementById('userLastName').textContent = localStorage.getItem('lastName');
+        document.getElementById('userMobile').textContent = localStorage.getItem('mobile');
+    </script>
+</body>
+</html>
